@@ -1,0 +1,21 @@
+$black: #000000;
+$dark-grey: #555555;
+$grey: #777777;
+$white: #ffffff;
+
+$font-stack: system, -apple-system, BlinkMacSystemFont, sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin transition {
+  transition: all 0.25s ease-in-out;
+}

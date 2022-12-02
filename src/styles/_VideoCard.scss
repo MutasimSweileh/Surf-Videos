@@ -1,0 +1,45 @@
+.VideoCard {
+  @include transition;
+  border: 1px solid #efefef;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  width: 100%;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__thumbnail {
+    img {
+      width: 100%;
+    }
+  }
+  &__details {
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__title {
+    color: $black;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__channel {
+    color: $dark-grey;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  &__published {
+    color: $grey;
+    font-size: 13px;
+  }
+  &__description {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: $grey;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}

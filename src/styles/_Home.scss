@@ -1,0 +1,9 @@
+.Home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 30px;
+  justify-content: center;
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
